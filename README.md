@@ -38,7 +38,7 @@ demo是spring+gradle项目
 				<execution>
 					<id>Generate</id>
 					<goals>
-						<goal>generate</goal>
+						<goal>generate</goal><!-- 一个goal代表一个特定任务 -->
 					</goals>
 				</execution>
 			</executions>
