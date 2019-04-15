@@ -5,7 +5,7 @@ demo是spring+gradle项目
 
 ## generatorConfig.xml mybatis实体配置文件
 需要的依赖
-...
+```
 <dependency>
 	<groupId>org.mybatis</groupId>
 	<artifactId>mybatis</artifactId>
@@ -45,4 +45,4 @@ demo是spring+gradle项目
 		</plugin>
 	</plugins>
 </build>
-...
+```
