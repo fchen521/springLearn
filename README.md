@@ -46,3 +46,5 @@ demo是spring+gradle项目
 	</plugins>
 </build>
 ```
+使用方法
+` Run---Edit Configuration---Maven--Command line 加 mybatis-generator:generate -e  `
