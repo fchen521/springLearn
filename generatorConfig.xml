@@ -16,7 +16,7 @@
 
         <!-- 数据库链接URL、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.0.111:3306/test" userId="root" password="root">
+                        connectionURL="jdbc:mysql://ip:3306/database" userId="username" password="userpassword">
         </jdbcConnection>
 
         <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer true，把JDBC DECIMAL
