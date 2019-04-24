@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.miaosha.miaosha.mapper.UserInfoPOMapper">
+  <resultMap id="BaseResultMap" type="com.example.miaosha.miaosha.model.UserInfoPO">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="context" jdbcType="VARCHAR" property="context" />
+    <result column="fylx" jdbcType="VARCHAR" property="fylx" />
+    <result column="lczd" jdbcType="VARCHAR" property="lczd" />
+    <result column="zlh" jdbcType="VARCHAR" property="zlh" />
+  </resultMap>
+
+
+</mapper>
