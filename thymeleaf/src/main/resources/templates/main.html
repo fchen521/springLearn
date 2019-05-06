@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 th:text="${title}">Welcome to springboot</h3>
+<table border="1">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Age</td>
+        <td>Name</td>
+    </tr>
+    </thead>
+    <tbody>
+   <!-- <tr th:if="${userModel.userList.size()} eq 0">
+        <td colspan="3">没有用户信息！！</td>
+    </tr>-->
+    <tr >
+        <td th:text="${user.id}">1</td>
+        <td th:text="${user.age}">11</td>
+        <td th:text="${user.name}">wss</td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
