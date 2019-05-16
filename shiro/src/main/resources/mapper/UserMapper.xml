@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.shiro.mapper.UserMapper">
+    <resultMap id="UserModel" type="sysUser">
+        <id column="id" property="id"/>
+        <result column="role_id" property="roleId"/>
+        <association property="roles" javaType="sysRole" column="role_id" select="getRole">
+            <id column="id" property="id"/>
+        </association>
+        <collection property="permissions" column="role_id" javaType="List" ofType="sysPermission" select="getPermissions">
+            <id column="id" property="id"/>
+        </collection>
+    </resultMap>
+    <select id="getUserDetails" resultMap="UserModel" parameterType="String">
+        SELECT * FROM `sys_user` WHERE username=#{userName}
+    </select>
+
+    <select id="getRole" parameterType="int" resultType="sysRole">
+        select * from sys_role WHERE id =#{roleId}
+    </select>
+
+    <select id="getPermissions" parameterType="int" resultType="sysPermission">
+        select * from sys_permission WHERE id in (select  permission_id from sys_role_permission WHERE role_id = #{role_id})
+    </select>
+</mapper>
