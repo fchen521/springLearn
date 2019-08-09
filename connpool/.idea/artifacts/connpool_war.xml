@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="connpool:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="connpool-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="connpool:war exploded" />
+    </root>
+  </artifact>
+</component>

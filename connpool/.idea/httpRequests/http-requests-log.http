@@ -1,0 +1,48 @@
+GET http://localhost:7777/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-24T044212.200.txt
+
+###
+
+GET http://localhost:7777/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-24T040022.200.txt
+
+###
+
+GET http://localhost:7777/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-24T035707.200.txt
+
+###
+
+GET http://localhost:7777/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-24T015900.200.txt
+
+###
+
+GET http://localhost:7777/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-24T015727.200.txt
+
+###
+
+GET http://localhost:7777/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-05-24T015720.404.json
+
+###
+
