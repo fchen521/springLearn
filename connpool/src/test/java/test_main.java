@@ -1,10 +1,12 @@
 import com.alibaba.fastjson.JSON;
 import com.example.model.UserInfo;
 import com.sun.javafx.scene.control.skin.ListCellSkin;
+import lombok.Value;
 import org.apache.commons.lang3.StringUtils;
 import org.assertj.core.internal.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.nio.file.Files;
 import java.sql.Timestamp;
@@ -37,9 +39,11 @@ import static java.util.stream.Collectors.maxBy;
 import static java.util.stream.Collectors.toList;
 
 public class test_main {
-   private static Logger logger = LoggerFactory.getLogger(test_main.class);
+
+    private static Logger logger = LoggerFactory.getLogger(test_main.class);
    public static ThreadLocal<Student> threadLocal = new ThreadLocal<>();
     public static void main(String[] args) throws CloneNotSupportedException {
+        System.out.println();
         /*Logger main = LoggerFactory.getLogger("test_main");
         logger.debug("hello {}","word");
         main.debug("你好，世界!!!");

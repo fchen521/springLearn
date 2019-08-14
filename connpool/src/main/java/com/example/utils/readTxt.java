@@ -1,6 +1,7 @@
 package com.example.utils;
 
 import com.google.common.base.Splitter;
+import com.google.common.primitives.Chars;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,7 +30,7 @@ public class readTxt {
         String temp = null;
         try{
             reader=new BufferedReader(new FileReader(file));
-            while((temp=reader.readLine())!=null){
+            while((temp=reader.readLine()) != null){
                 List<String> strings = Splitter.on(rule).omitEmptyStrings().trimResults().splitToList(temp);
                 String[] array = strings.toArray(new String[strings.size()]);
                 System.out.println(array[0]+"\t"+array[1]);
@@ -52,6 +53,7 @@ public class readTxt {
     }
     public static void main(String[] args){
         readTxt txt = new readTxt();
-        txt.analysisTxt("src\\main\\resources\\test\\a.txt"," ");
+        String path = Thread.currentThread().getContextClassLoader().getResource("test/a.txt").getPath();
+        txt.analysisTxt(path," ");
     }
 }
