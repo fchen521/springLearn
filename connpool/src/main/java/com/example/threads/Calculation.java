@@ -1,5 +1,7 @@
 package com.example.threads;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -45,7 +47,7 @@ public class Calculation {
     }
 
     public static void main(String[] args) {
-
+        Executors.newCachedThreadPool();
             long numbers = 1000000000;
             new Calculation().startUp(numbers,100);
 

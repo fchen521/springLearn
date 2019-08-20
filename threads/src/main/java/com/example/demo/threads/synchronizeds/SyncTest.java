@@ -1,5 +1,11 @@
 package com.example.demo.threads.synchronizeds;
 
+/**
+ * 同步方法和同步块：
+   同步方法就是在方法前加关键字synchronized，然后被同步的方法一次只能有一个线程进入，其他线程等待。
+   而同步块则是在方法内部使用大括号使得一个代码块得到同步。同步块会有一个同步的”目标“，使得同步块更加灵活一些
+  （同步块可以通过”目标“决定需要锁定的对象）。一般情况下，如果此”目标“为this，那么同步方法和同步块没有太大的区别。
+ */
 public class SyncTest {
     public static void main(String[] args) {
 
