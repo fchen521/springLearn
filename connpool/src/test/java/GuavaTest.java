@@ -1,17 +1,23 @@
 import com.google.common.base.CharMatcher;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
+import com.google.common.base.Stopwatch;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import com.google.common.io.Files;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class GuavaTest {
-    public static void main(String[] args) {
-        //集合创建：
+    public static void main(String[] args) throws InterruptedException, IOException {
+       /* //集合创建：
         Map<String, Map<String, String>> map = Maps.newHashMap();
         List<List<Map<String, String>>> list = Lists.newArrayList();
 
@@ -37,5 +43,20 @@ public class GuavaTest {
         int in = CharMatcher.is('b').lastIndexIn("ababa");//最后一次出现目标字符的位置 3
         String s1 = CharMatcher.anyOf("ab").removeFrom("ababac");//移除指定字符串c
 
+        System.out.println("开始处理");
+        Stopwatch started = Stopwatch.createStarted();
+        TimeUnit.SECONDS.sleep(2);
+        System.out.println("结束时间"+started.stop());
+
+        File SOURCE = new File("a.txt");
+        File TARGET = new File("b.txt");
+        Files.copy(SOURCE,TARGET); //copy 文件
+        Files.move(SOURCE,TARGET);//移动文件*/
+
+        AtomicInteger integer = new AtomicInteger(1);
+        int i = integer.getAndSet(5);
+        System.out.println(i);
     }
 }
+
+
