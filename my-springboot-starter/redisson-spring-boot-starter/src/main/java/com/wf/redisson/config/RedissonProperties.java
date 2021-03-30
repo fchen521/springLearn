@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * @author chen fei
  * @version 1.0
- * @desc
+ * @desc 厚德笃行 致用创新
  * @date 2021/2/23 10:24
  */
 @ConfigurationProperties(prefix = "wf.redisson")
